@@ -7,9 +7,15 @@ export class AuthenticationService {
 
   logIn() {
     return {
-      result: true,
+      logged: true,
       user: 'Sema García',
       profile: 'USER'
+    }
+  }
+
+  logOut() {
+    return {
+      logged: false
     }
   }
 
