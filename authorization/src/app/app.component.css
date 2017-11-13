@@ -9,10 +9,6 @@
   width: 100%;
 }
 
-.container .row {
-
-}
-
 .container .column-component {
   flex-grow: 1;
 }
