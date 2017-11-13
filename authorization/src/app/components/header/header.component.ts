@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   constructor(private _authSrv: AuthenticationService) { }
 
   ngOnInit() {
-    //this.loginStatus = false;
     this._authSrv.getAuthChanges().subscribe(
       (result: { logged: boolean, user?: string, profile?: string }) => this.loginStatus = result.logged
     );
