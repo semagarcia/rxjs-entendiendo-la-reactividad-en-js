@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
+import { AuthenticationService } from './../../core';
+
 @Component({
   selector: 'demo-header',
   templateUrl: './header.component.html',
@@ -10,14 +12,21 @@ export class HeaderComponent implements OnInit {
 
   loginStatus: boolean;
 
-  constructor() { }
+  constructor(private _authSrv: AuthenticationService) { }
 
   ngOnInit() {
-    this.loginStatus = false;
+    //this.loginStatus = false;
+    this._authSrv.getAuthChanges().subscribe(
+      (result: { logged: boolean, user?: string, profile?: string }) => this.loginStatus = result.logged
+    );
   }
 
   loginLogout() {
-    this.loginStatus = !this.loginStatus;
+    if(this.loginStatus) {
+      this._authSrv.logOut();
+    } else {
+      this._authSrv.logIn();
+    }
   }
 
 }
