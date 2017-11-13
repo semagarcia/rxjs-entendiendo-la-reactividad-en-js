@@ -8,9 +8,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  loginStatus: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.loginStatus = false;
+  }
+
+  loginLogout() {
+    this.loginStatus = !this.loginStatus;
   }
 
 }
