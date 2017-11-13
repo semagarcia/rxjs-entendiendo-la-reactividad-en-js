@@ -1,11 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CompOneComponent } from './comp-one/comp-one.component';
-import { CompTwoComponent } from './comp-two/comp-two.component';
-import { CompThreeComponent } from './comp-three/comp-three.component';
-import { HeaderComponent } from './header/header.component';
+import { CompOneComponent } from './components/comp-one/comp-one.component';
+import { CompTwoComponent } from './components/comp-two/comp-two.component';
+import { CompThreeComponent } from './components/comp-three/comp-three.component';
+import { HeaderComponent } from './components/header/header.component';
+
+import { AuthenticationService } from './core';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
