@@ -8,6 +8,15 @@
   </div>
   <div class="row">
     <p>You are currently: {{ logInState }}</p>
+    <div *ngIf="logInState === 'Logged In'">
+      <p>User data:</p>
+
+        <ul>
+          <li>User logged as: {{ user }}</li>
+          <li>Profile: {{ profile }}</li>
+        </ul>
+
+    </div>
   </div>
 </div>
 
