@@ -1,5 +1,5 @@
 // CodeMotion example
-class User {
+class UserSync {
     private backendUserSrv;
 
     setName(name: string) {

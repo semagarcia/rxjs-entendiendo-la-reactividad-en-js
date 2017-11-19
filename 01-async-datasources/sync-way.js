@@ -21,4 +21,4 @@ let PersonSync = {
             console.log('%c[CodeMotion] age successfully set!', 'background:#090; color:white');
         }, 1000);
     }
-};
+}; 
