@@ -1,8 +1,14 @@
 // A promise: at least one callback, available: callbacks for OK and Error
-const request = fetch('')
-    .then((data) => {  // Callback for successful
+const request = fetch('');
 
-    })  
-    .catch((error) => {  // Callback for error
+// Callback for successful
+const successCb = (data) => console.log('Data: ', data);
 
-    });
+// Callback for error
+const errorCb = (error) => console.log('Error: ', error);
+
+// Set callbacks
+request.then(successCb, errorCb);
+
+// Other option:
+// request.then(successCb).catch(errorCb);
