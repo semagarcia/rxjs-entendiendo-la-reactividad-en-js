@@ -1,0 +1,18 @@
+{
+  "name": "rxjs-entendiendo-la-reactividad-en-js",
+  "version": "1.0.0",
+  "description": "Repository with examples for CodeMotion 2017 talk 'Entendiendo la reactividad de una vez por todas'",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js.git"
+  },
+  "author": "Sema García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js/issues"
+  },
+  "homepage": "https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js#readme"
+}
