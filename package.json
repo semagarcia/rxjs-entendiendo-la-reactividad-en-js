@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Repository with examples for CodeMotion 2017 talk 'Entendiendo la reactividad de una vez por todas'",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node simple-server.js"
   },
   "repository": {
     "type": "git",
@@ -14,5 +14,7 @@
   "bugs": {
     "url": "https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js/issues"
   },
-  "homepage": "https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js#readme"
+  "homepage": "https://github.com/semagarcia/rxjs-entendiendo-la-reactividad-en-js#readme",
+  "devDependencies": {
+  }
 }
