@@ -6,13 +6,13 @@ const dataCb = (data) => console.log('Data -> ', data);
 const errorCb = (error) => console.log('Error! ', error);
 const endCb = () => console.log('End!');
 
-// Instantiation
+// Watcher instantiation
 const w = watcher(dataCb, errorCb, endCb);
 
-// Test array
-const array = [10, 20, 30, 40, 50];
+function doSomethingWithNumbers(aWatcher) {
+    [10, 20, 30, 40, 50].forEach(aWatcher.onData);
+    aWatcher.onEnd();
+}
 
-// Using our structure
-console.log('Before...');
-array.forEach(w.onData);
-w.onEnd();
+// Execute
+doSomethingWithNumbers(w);
