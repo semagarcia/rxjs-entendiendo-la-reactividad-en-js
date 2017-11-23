@@ -1,11 +1,7 @@
-const watcher = {
-    onData: (data) => {
-
-    },
-    onError: (error) => {
-
-    },
-    onEnd: () => {
-        
+module.exports = (data, error, end) => {
+    return {
+        onData: data,
+        onError: error,
+        onEnd: end
     }
 };
