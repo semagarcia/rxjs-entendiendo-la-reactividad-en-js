@@ -7,11 +7,20 @@ const observable = {
 };
 
 // New watcher structure instantiation
-const observer = {
-    onData: (data) => console.log('Data -> ', data),
+const observer1 = {
+    onData: (data) => console.log(`[OBS1] Ohhh! Lion has said: ${data}`),
+    onError: (error) => console.log('Error! ', error),
+    onEnd: () => console.log('End!')
+};
+
+const observer2 = {
+    onData: (data) => console.log(`[OBS2] Ohhh! Lion has said: ${data}`),
     onError: (error) => console.log('Error! ', error),
     onEnd: () => console.log('End!')
 };
 
 // Execute
-observable.subscribe(observer);
+Promise.all([
+    observable.subscribe(observer1),
+    observable.subscribe(observer2)
+]);
