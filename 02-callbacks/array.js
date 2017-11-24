@@ -1,4 +1,4 @@
-const array = [10, 20, 30, 40, 50];
+const array = [1, 2, 3, 4, 5];
 
 // Just a callback
 const callback = (n) => console.log('Number: ', n);

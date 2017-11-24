@@ -10,7 +10,7 @@ const endCb = () => console.log('End!');
 const w = watcher(dataCb, errorCb, endCb);
 
 function doSomethingWithNumbers(aWatcher) {
-    [10, 20, 30, 40, 50].forEach(aWatcher.onData);
+    [1, 2, 3, 4, 5].forEach(aWatcher.onData);
     aWatcher.onEnd();
 }
 
