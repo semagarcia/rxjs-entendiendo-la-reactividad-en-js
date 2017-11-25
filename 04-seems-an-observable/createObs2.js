@@ -7,7 +7,7 @@ function createObservable(subscribe) {
 }
 
 function filter(myFilterFunction) {
-    // Address to lionObservable (owner object). So, the input of filter operation is an observable
+    // "this" address to lionObservable (owner object). So, the input of filter operation is an observable
     const inputObservable = this;
     const outputObservable = createObservable((outputObserver) => {
         inputObservable.subscribe({
