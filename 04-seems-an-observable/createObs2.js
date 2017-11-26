@@ -32,7 +32,7 @@ const observer = {
 
 const lionObservable = createObservable((obs) => {
     console.log('The lion is there... listen it!');
-    ["GRR", "GRRRRRR", "GRRR", "UOOAHHHH"].forEach(obs.next);
+    ["GRR", "GRR", "GRRRRRR", "GRRR", "UOOAHHHH"].forEach(obs.next);
     obs.complete();
 });
 
