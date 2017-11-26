@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
+import { AuthenticationService } from './../../core';
+
 @Component({
   selector: 'demo-comp-three',
   templateUrl: './comp-three.component.html',
@@ -7,10 +9,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class CompThreeComponent implements OnInit {
+  state: object;
 
-  constructor() { }
+  constructor(private authSrv: AuthenticationService) { }
 
   ngOnInit() {
+    this.authSrv.getAuthChanges().subscribe(
+      (obj) => this.state = obj
+    );
   }
 
 }
