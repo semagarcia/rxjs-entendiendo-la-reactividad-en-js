@@ -4,5 +4,5 @@ function callback($event) {
     console.log('Clicked!', $event);
 }
 
-// Just a callback
+// Just an async callback
 bodyElement.addEventListener('click', callback);
