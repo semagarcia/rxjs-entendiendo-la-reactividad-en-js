@@ -9,6 +9,9 @@ Code repository for my talk "Entendiendo de una vez por todas eso de la reactivi
 - 06-Subject
 - 07-angular-auth
 
+# Presentation (PPT)
+The presentation can be found [here](https://www.slideshare.net/sema_hkd/entendiendo-la-reactividad-de-una-vez-por-todas-code-motion17).
+
 # Examples
 ## 01 - Async DataSources
 Lorem ipsum
