@@ -34,6 +34,6 @@ Lorem ipsum
 ## 07 - Angular Auth
 Angular project made to show the use of subjects, subscribing to an source that emits the changes in the auth state (logged in / logged out). There are the following components in the UI:
 - Header: it's the navbar and in its right side there is a button to switch between logged in and logged out.
-- Component one and three:
-- Component two:
+- Component one and three: they are simple and plain objects which are subscribed to user's auth state.
+- Component two: this component is also subscribed to the user's auth state, but after this initial step (subscription), it will be unsuscribed to show how this component won't listen changes anymore.
 - Core auth service:
