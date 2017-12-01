@@ -36,4 +36,4 @@ Angular project made to show the use of subjects, subscribing to an source that 
 - Header: it's the navbar and in its right side there is a button to switch between logged in and logged out.
 - Component one and three: they are simple and plain objects which are subscribed to user's auth state.
 - Component two: this component is also subscribed to the user's auth state, but after this initial step (subscription), it will be unsuscribed to show how this component won't listen changes anymore.
-- Core auth service:
+- Core auth service: service to log in or log out (mocked) and expose a method to subscribe to this changes.
