@@ -37,3 +37,6 @@ Angular project made to show the use of subjects, subscribing to an source that 
 - Component one and three: they are simple and plain objects which are subscribed to user's auth state.
 - Component two: this component is also subscribed to the user's auth state, but after this initial step (subscription), it will be unsuscribed to show how this component won't listen changes anymore.
 - Core auth service: service to log in or log out (mocked) and expose a method to subscribe to this changes.
+
+# Disclaimer
+Some of this example are focused in show how some concept or topic works. Please, don't follow the examples line by line. For instance, in the Angular example, there is no unsubscribe action, what it could introduce a memory leak, but exemplifies how subscription/unsubscribe works.
