@@ -32,4 +32,8 @@ Lorem ipsum
 Lorem ipsum
 
 ## 07 - Angular Auth
-Lorem ipsum
+Angular project made to show the use of subjects, subscribing to an source that emits the changes in the auth state (logged in / logged out). There are the following components in the UI:
+- Header: it's the navbar and in its right side there is a button to switch between logged in and logged out.
+- Component one and three:
+- Component two:
+- Core auth service:
