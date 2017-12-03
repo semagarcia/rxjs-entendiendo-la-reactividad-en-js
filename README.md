@@ -21,10 +21,10 @@ Lorem ipsum
 
 ## 02 - Callbacks <div id="02" />
 Basic examples to show different use of callbackers, sync and async.
-- *Clicks*:
-- *Array*:
-- *Fetch*:
-- *File*:
+- *Clicks*: asynchronous callback to log each click on the screen (inside the body).
+- *Array*: synchronous callback to print through console the numbers contained in the array.
+- *Fetch*: asynchronous callbacks for an AJAX request (success callback) and another callback for error handling.
+- *File*: asynchronous callbacks for: line read, error handling and file processed.
 
 ## 03 - New Structures <div id="03" />
 Improved examples (evolving the [previous one](#02))
