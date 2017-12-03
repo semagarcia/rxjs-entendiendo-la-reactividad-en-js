@@ -2,12 +2,13 @@
 Code repository for my talk "Entendiendo de una vez por todas eso de la reactividad" (Codemotion, Spain 2017)
 
 # Table of Content
-- [01-async-datasources](#01)
-- [02-callbacks](#02)
-- [03-new-structures](#03)
-- [04-seems-an-observable](#04)
-- [06-Subject](#06)
-- [07-angular-auth](#07)
+- [01 - Async datasources](#01)
+- [02 - Callbacks](#02)
+- [03 - New structures](#03)
+- [04 - Seems an observable](#04)
+- [05 - Observables](#05)
+- [06 - Subjects](#06)
+- [07 - Angular Auth](#07)
 
 # Presentation (PPT)
 The presentation can be found [here](https://www.slideshare.net/sema_hkd/entendiendo-la-reactividad-de-una-vez-por-todas-code-motion17).
