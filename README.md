@@ -27,7 +27,11 @@ Basic examples to show different use of callbackers, sync and async.
 - *File*: asynchronous callbacks for: line read, error handling and file processed.
 
 ## 03 - New Structures <div id="03" />
-Improved examples (evolving the [previous one](#02))
+Improved examples (evolving the [previous one](#02)).
+### notifier.js
+This file
+
+### Examples:
 - *Clicks*:
 - *Array*:
 - *Fetch*:
