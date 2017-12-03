@@ -17,7 +17,7 @@ The presentation can be found [here](https://www.slideshare.net/sema_hkd/entendi
 Lorem ipsum
 
 ## 02 - Callbacks
-Lorem ipsum
+Basic examples to show different use of callbackers, sync and async.
 
 ## 03 - New Structures
 Lorem ipsum
