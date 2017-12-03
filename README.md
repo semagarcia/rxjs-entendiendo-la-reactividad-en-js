@@ -26,7 +26,7 @@ Basic examples to show different use of callbackers, sync and async.
 - *Fetch*:
 - *File*:
 
-## 03 - New Structures
+## 03 - New Structures <div id="03" />
 Improved examples (evolving the [previous one](#02))
 - *Clicks*:
 - *Array*:
