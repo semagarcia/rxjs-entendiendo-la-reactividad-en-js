@@ -56,7 +56,7 @@ const myWatcher = notifier(
 - *createObs2.js*:
 
 ## 05 - Observables <div id="05" />
-Lorem ipsum
+Out of the scope of the talk.
 
 ## 06 - Subject <div id="06" />
 - *simple-subject.js*:
