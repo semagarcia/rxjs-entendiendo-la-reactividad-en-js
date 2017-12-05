@@ -29,13 +29,25 @@ Basic examples to show different use of callbackers, sync and async.
 ## 03 - New Structures <div id="03" />
 Improved examples (evolving the [previous one](#02)).
 ### notifier.js
-This file
+This file defines the three types of callbacks seen in the previous examples, standardized in this *notifier* object:
+- *onData*: executed for each stream or event produced/emitted.
+- *onError*: executed when an error ocurred.
+- *onEnd*: executed when the stream has completed.
+
+This notifier is just a function that will receive these three callbacks; for instance:
+```js
+const myWatcher = notifier(
+    (data) => { /* Data produced */ },
+    (error) => { /* Error */ },
+    () => { /* Stream complete */ },
+);
+```
 
 ### Examples:
-- *Clicks*:
-- *Array*:
-- *Fetch*:
-- *File*:
+- *Clicks*: this browserable example will observe the clicks emitted inside the body element. This click stream produced will be logged through the notifier object.
+- *Array*: this example shows the numbers contained inside of an array using notifier object, which is populated with logger for trace elements and another one to trace the end of the array.
+- *Fetch*: this example shows how perform a fetch operation and log the result if it was successful or the error if the request failed.
+- *File*: last full example to show a case when the three callbacks could be used. This snippet will trace each line (dataCb), an error (errorCb) and the end of the file (endCb). The same file contains a second execution to force an error trying to read an inexisten file.
 
 ## 04 - Seems an observable <div id="04" />
 - *new-array.js*:
