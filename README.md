@@ -50,10 +50,11 @@ const myWatcher = notifier(
 - *File*: last full example to show a case when the three callbacks could be used. This snippet will trace each line (dataCb), an error (errorCb) and the end of the file (endCb). The same file contains a second execution to force an error trying to read an inexisten file.
 
 ## 04 - Seems an observable <div id="04" />
-- *new-array.js*:
-- *someObs.js*:
-- *createObs.js*:
-- *createObs2.js*:
+Snippets related to the lion example (see the slides of the PPT):
+- *new-array.js*: convert array number example to lion array and use the observable structure.
+- *someObs.js*: two observers subscribed to lion observable.
+- *createObs.js*: use a function to create observables.
+- *createObs2.js*: extend the previous example with filter operation. By default, the example has commented the last line (*.subscribe()*), in order to show how the observable does not work until this line would be uncommented.
 
 ## 05 - Observables <div id="05" />
 Out of the scope of the talk.
