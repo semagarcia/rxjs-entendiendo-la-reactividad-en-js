@@ -60,8 +60,8 @@ Snippets related to the lion example (see the slides of the PPT):
 Out of the scope of the talk.
 
 ## 06 - Subject <div id="06" />
-- *simple-subject.js*:
-- *death-subject.js*:
+- *simple-subject.js*: very basic example to show how subject works (observable and observer at same time). Once the subject is created, two subscription is created to observe the values emited. After that, the subject will emit five values. There is no unsubscribe operation (not recommended).
+- *death-subject.js*: one subject created, which it will emit two values, then will be marked as complete (there is no more elements emitted). Although there is one value emitted (number 3), it is ignored because the stream is already finished by the previous *complete()* call. At this moment, the observer is subscribed yet, but no receives more data. However, after perform the *unsubscribe()*, if we try to emit a new value, we'll obtain *"Unhandled ObjectUnsubscribedError"*.
 
 ## 07 - Angular Auth <div id="07" />
 Angular project made to show the use of subjects, subscribing to an source that emits the changes in the auth state (logged in / logged out). There are the following components in the UI:
