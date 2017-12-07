@@ -15,9 +15,11 @@ The presentation can be found [here](https://www.slideshare.net/sema_hkd/entendi
 
 # Examples
 ## 01 - Async DataSources <div id="01" />
-Lorem ipsum
-- *sync-way.ts*:
-- *async-rp-way.ts*:
+Example situation to show the difference between sync and async operation:
+- *sync-way.ts*: a sync save operation to the backend. With this example, the application will be blocked (remember that JavaScript is single-thread) until the request finishes. 
+- *async-rp-way.ts*: in the asynchronous version, we use callbacks to not block the main execution. With this approach, it doesn't matter how much time takes the request, because we are not freezing the app.
+
+To avoid to transpile the examples, there are the correspondent JavaScript version, in order to copy & paste easily to execute in the browser or in node.js.
 
 ## 02 - Callbacks <div id="02" />
 Basic examples to show different use of callbackers, sync and async.
